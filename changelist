@@ -1,0 +1,7 @@
+    val scl = new SensorChangeListener {
+      override def sensorChanged(sensorChangeEvent: SensorChangeEvent): Unit = {
+        System.out.println("Value changed : " + sensorChangeEvent.getValue)
+      }
+    }
+
+    ifk addSensorChangeListener scl

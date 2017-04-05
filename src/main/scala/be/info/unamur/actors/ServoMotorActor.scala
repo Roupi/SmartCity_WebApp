@@ -3,11 +3,6 @@ package be.info.unamur.actors
 import akka.actor.Actor
 import com.phidgets.AdvancedServoPhidget
 
-/**
-  * Created by Noé Picard on 3/23/17.
-  *
-  * Servo motor actor.
-  */
 class ServoMotorActor extends Actor {
   override def receive: Receive = {
     case "OPEN_THE_BARRIER" =>
